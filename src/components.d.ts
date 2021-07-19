@@ -12,20 +12,6 @@ export namespace Components {
          */
         "language": string;
     }
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
-    }
 }
 declare global {
     interface HTMLEtRegisterCcElement extends Components.EtRegisterCc, HTMLStencilElement {
@@ -34,15 +20,8 @@ declare global {
         prototype: HTMLEtRegisterCcElement;
         new (): HTMLEtRegisterCcElement;
     };
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
-    }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
-    };
     interface HTMLElementTagNameMap {
         "et-register-cc": HTMLEtRegisterCcElement;
-        "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
@@ -52,23 +31,8 @@ declare namespace LocalJSX {
          */
         "language"?: string;
     }
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
-    }
     interface IntrinsicElements {
         "et-register-cc": EtRegisterCc;
-        "my-component": MyComponent;
     }
 }
 export { LocalJSX as JSX };
@@ -76,7 +40,6 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "et-register-cc": LocalJSX.EtRegisterCc & JSXBase.HTMLAttributes<HTMLEtRegisterCcElement>;
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }
 }

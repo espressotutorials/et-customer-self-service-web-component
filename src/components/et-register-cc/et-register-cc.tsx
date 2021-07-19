@@ -11,6 +11,7 @@ export class EtRegisterCc {
    */
   @Prop() language: string;
 
+  // States
   @State() familyName: string;
   @State() givenName: string;
   @State() mail: string;
@@ -19,7 +20,7 @@ export class EtRegisterCc {
   @State() errorStatus: number;
   @State() success: boolean = false;
 
-  // Submit form
+  // Submit form and fetch api
   handleSubmit(e) {
     e.preventDefault()
     const opts = {
@@ -30,7 +31,7 @@ export class EtRegisterCc {
       language: this.language
     }
 
-    fetch('https://staging.api.espresso-tutorials.com/auth/register/customer-account', {
+    fetch('https://api.espresso-tutorials.com/auth/register/customer-account', {
       method: 'post',
       body: JSON.stringify(opts),
       headers: {
@@ -87,6 +88,9 @@ export class EtRegisterCc {
     }
   }
 
+  /*
+  * Handle input changes and update state
+  */
   handleFamilyNameChange(event) {
     this.familyName = event.target.value;
   }
@@ -100,7 +104,6 @@ export class EtRegisterCc {
   }
 
   handlePrivacyChange(event) {
-    console.log(event.target.checked);
     this.privacy = event.target.checked;
   }
 
@@ -147,6 +150,7 @@ export class EtRegisterCc {
     }
   }
 
+  // Render component
   render() {
     return (
       <Host>

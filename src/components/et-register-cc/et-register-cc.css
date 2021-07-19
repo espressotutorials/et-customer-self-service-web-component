@@ -1,20 +1,43 @@
 :host {
+  /**
+    * @prop --color-green-500: Success message color
+    */
   --color-green-500: #38c172;
+  /**
+    * @prop --color-red-500: Error message color
+    */
   --color-red-500: #e3342f;
-  --color-gray-100: #f8fafc;
+  /**
+   * @prop --color-gray-200: Input background color
+   */
   --color-gray-200: #fcfcfc;
-  --color-gray-300: #f9f9f9;
-  --color-gray-400: #f3f3f3;
-  --color-gray-500: #efefef;
+  /**
+   * @prop --color-gray-500: Privacy policy description text color, Input border color
+   */
   --color-gray-600: #cccccc;
+  /**
+   * @prop --color-gray-700: Label text color, Input text color
+   */
   --color-gray-700: #8E8E8E;
-  --color-gray-800: #505763;
-  --color-gray-900: #29303b;
-  --color-gray-800: #282e36;
+  /**
+   * @prop --color-white: Success / Error message text color
+   */
   --color-white: #ffffff;
+  /**
+   * @prop --color-key-500: Button background color
+   */
   --color-key-500: #33a8e0;
+  /**
+   * @prop --color-key-600: Button hover background color
+   */
   --color-key-600: #f39100;
+  /**
+   * @prop --font-family: Base font family
+   */
   --font-family:  'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', '"Noto Sans"', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"';
+  /**
+   * @prop --font-size: Base font size
+   */
   --font-size: '16px';
   display: block;
   font-size: var(--font-size);

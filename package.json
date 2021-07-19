@@ -1,15 +1,15 @@
 {
-  "name": "et-customer-self-service-web-component",
-  "version": "0.0.1",
+  "name": "@espressotutorialsgmbh/et-customer-self-service-web-component",
+  "version": "1.0.4",
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
   "module": "dist/custom-elements/index.js",
   "es2015": "dist/esm/index.mjs",
   "es2017": "dist/esm/index.mjs",
   "types": "dist/custom-elements/index.d.ts",
+  "unpkg": "dist/espresso-tutorials/index.js",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/et-customer-self-service-web-component/et-customer-self-service-web-component.esm.js",
   "files": [
     "dist/",
     "loader/"
@@ -24,5 +24,24 @@
   "dependencies": {
     "@stencil/core": "^2.0.1"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/espressotutorials/et-customer-self-service-web-component.git"
+  },
+  "keywords": [
+    "stenciljs",
+    "angular",
+    "react",
+    "vue",
+    "ember",
+    "javascript",
+    "webcomponent"
+  ],
+  "author": "Espresso Tutorials GmbH",
+  "bugs": {
+    "url": "https://github.com/espressotutorials/et-customer-self-service-web-component/issues"
+  },
+  "homepage": "https://github.com/espressotutorials/et-customer-self-service-web-component#readme"
 }
