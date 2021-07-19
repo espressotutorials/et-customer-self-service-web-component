@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Customer Self Service Registration
+    </title>
+
+    <script type="module" src="/build/et-customer-self-service-web-component.esm.js"></script>
+    <script nomodule src="/build/et-customer-self-service-web-component.js"></script>
+
+    <style>
+      .demo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+      }
+      .demo__wrapper {
+        max-width: 320px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo">
+      <div class="demo__wrapper">
+        <et-register-cc language="de"></et-register-cc>
+      </div>
+    </div>
+  </body>
+</html>
