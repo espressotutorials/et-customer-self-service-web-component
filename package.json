@@ -1,7 +1,7 @@
 {
   "name": "@espressotutorialsgmbh/et-customer-self-service-web-component",
-  "version": "1.0.4",
-  "description": "Stencil Component Starter",
+  "version": "1.0.5",
+  "description": "This web competence offers users a self-service registration for the online learning platform et.training.",
   "main": "dist/index.cjs.js",
   "module": "dist/custom-elements/index.js",
   "es2015": "dist/esm/index.mjs",
